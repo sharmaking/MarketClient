@@ -26,9 +26,9 @@ class QMainWindow(QtGui.QMainWindow):
 	def showS(self, meessage):
 		meessages = meessage.split('_')
 		if meessages[1] == "600000":
-			self.lcdNumber_1.display(meessages[2].replace("-",""))
+			self.lcdNumber_1.display(meessages[2])
 		elif meessages[1] == "600648":
-			self.lcdNumber_2.display(meessages[2].replace("-",""))
+			self.lcdNumber_2.display(meessages[2])
 	#显示交易信号
 	def showTradeMessage(self, meessage):
 		meessages = meessage.split('_')
